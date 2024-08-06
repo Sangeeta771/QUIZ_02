@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div class="app">
+        <h1>
+             Quiz with Curiosity
+        </h1>
+        <h5 class="instruction">*Instruction : Once an answer is selected, it cannot be changed. Confirm your choice before clicking. Choose wisely, as selections are final.</h5>
+        <div class="quiz">
+            <div class="question">
+                <h3>Question goes here</h3>
+            </div>
+            <div class="options">
+               <button onclick="checkAnswer(0)" type="button" class="btn">
+                shark
+            </button>
+               <button onclick="checkAnswer(1)"   type="button" class="btn">
+                Blue whale
+               </button>
+               <button onclick="checkAnswer(2)"  type="button" class="btn">
+                elephant
+               </button>
+               <button onclick="checkAnswer(3)"  type="button" class="btn ">
+                anaconda
+               </button>
+            </div>
+        </div>
+        <div class="score">
+            <h2>Your score is</h2>
+        </div>
+
+        <div class="navbtn">
+            <button onclick="next()" id="next"  type="button">next</button>
+            <button onclick="restart()"  id="Restart"  type="button">Restart</button>
+            <button onclick="playAgain()"  id="playAgain"  type="button">PlayAgain</button>
+            <button onclick="submit()"  id="submit"  type="button">submit</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
